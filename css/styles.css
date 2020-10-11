@@ -8,11 +8,39 @@ nav {
     position: fixed;
     overflow: auto;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2vw;
     box-shadow: 8px 8px 8px grey;
 }
 
 #navText {
     font-family: Oswald;
     text-transform: uppercase;
+}
+
+#selfie {
+    border-radius: 50%;
+    border: 3px solid #FF6600;
+    background-color: #FF6600;
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vh;
+}
+
+#navText a{
+    color: white;
+}
+
+#navText a:link {
+    color: white;
+}
+
+#navText a:hover {
+    color: black;
+}
+
+#navText a:active {
+    color: black;
 }
