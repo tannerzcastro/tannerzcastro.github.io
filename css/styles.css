@@ -9,7 +9,7 @@ nav {
     overflow: auto;
     text-align: center;
     font-size: 2vw;
-    box-shadow: 8px 8px 8px grey;
+    box-shadow: 8px 8px 8px rgb(44, 44, 44);
 }
 
 #navText {
@@ -43,4 +43,22 @@ nav {
 
 #navText a:active {
     color: black;
+}
+
+footer {
+    background-color: darkgray;
+    position: fixed;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 5vh;
+    
+}
+
+.footerIcon {
+    width: 100px;
+    height: 100px;
 }
