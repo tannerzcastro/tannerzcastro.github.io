@@ -1,0 +1,18 @@
+nav {
+    background-color: #FF6600;
+    width: 10%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: auto;
+    text-align: center;
+    font-size: 2.5vw;
+    box-shadow: 8px 8px 8px grey;
+}
+
+#navText {
+    font-family: Oswald;
+    text-transform: uppercase;
+}
