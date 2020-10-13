@@ -13,7 +13,7 @@
     <title>Tanner's Portfolio</title>
   </head>
   <body>
-    <div cladd ="container-fluid">
+    <div>
     <nav id="navText"> 
         <a href="#">Home</a>
         <a href="#">Gallery</a>
@@ -22,6 +22,17 @@
   </div>
   <div>
     <img id="selfie" src="./img/tanner.jpg">
+  </div>
+  <div class="container">
+    <form>
+      <label for="name">First Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+      <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email address">
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Type your message here" style="height:200px"></textarea>
+      <input type="submit" value="Submit"> 
+    </form>
   </div>
   <footer>
     <div class="footerIcon">
