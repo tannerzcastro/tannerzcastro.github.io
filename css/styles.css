@@ -5,6 +5,7 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+    opacity: 50%;
 }
 
 nav {
@@ -27,6 +28,22 @@ nav {
     text-transform: uppercase;
 }
 
+#navText a {
+    color: white;
+}
+
+#navText a:link {
+    color: white;
+}
+
+#navText a:hover {
+    color: black;
+}
+
+#navText a:active {
+    color: black;
+}
+
 #selfie {
     border-radius: 50%;
     border: 3px solid #FF6600;
@@ -38,13 +55,14 @@ nav {
     margin-top: 3vh;
     margin-right: 3vh;
     position: relative;
+    z-index: 2;
 }
 
 #landingPageCarousel {
     height: 60vh;
     width: 70vh;
     margin: auto;
-    position: relative;
+    position: sticky;
 }
 
 #landingPageCarousel .carousel-inner, 
@@ -61,8 +79,10 @@ nav {
 
 .carousel-caption{
     color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
+    width: 45%;
+    left: 30%;
 }
 
 #slideOne {
@@ -74,27 +94,38 @@ nav {
 }
 
 #slideThree {
-    background-image: url("../img/state.jpg");
+    background-image: url("../img/networklayout.png");
 }
 
 #slideFour {
-    background-image: url("../img/city.jpg");
+    background-image: url("../img/waterpolo.jpg");
 }
 
-#navText a {
-    color: white;
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.4s;
+    left: 40%;
 }
-
-#navText a:link {
-    color: white;
+  
+.active, .accordion:hover {
+    background-color: #ccc;
 }
-
-#navText a:hover {
-    color: black;
-}
-
-#navText a:active {
-    color: black;
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    width: 60%;
+    display: none;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
 input[type=text], select, textarea {
@@ -133,4 +164,10 @@ footer {
     padding-bottom: 10px;
     margin-left: 10%;
     width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 90%;
+    left: 10%;
 }

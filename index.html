@@ -15,14 +15,16 @@
     </video>
     <div>
     <nav id="navText"> 
-        <a href="#">Gallery</a>
-        <a href="#">About Me</a>
-        <a href="#">Contact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#contact">Contact</a>
     </nav>
   </div>
-  <div>
+  <!-- <div>
     <img id="selfie" src="./img/tanner.jpg">
-  </div>
+  </div> -->
+
+<div class="wrapper">
   <div id="landingPageCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#landingPageCarousel" data-slide-to="0" class="active"></li>
@@ -30,10 +32,11 @@
       <li data-target="#landingPageCarousel" data-slide-to="2"></li>
       <li data-target="#landingPageCarousel" data-slide-to="3"></li>
     </ol>
+    <a id="gallery"></a>
     <div class="carousel-inner">
       <div class="carousel-item active" id="slideOne">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Illustration</h5>
+          <h5><a id="gallery"></a>Illustration</h5>
           <p>Experience with various traditional methods of drawing</p>
         </div>
       </div>
@@ -45,14 +48,14 @@
       </div>
       <div class="carousel-item" id="slideThree">
         <div class="carousel-caption d-none d-md-block">
-          <h5>The Golden State!</h5>
-          <p>Getting closer...</p>
+          <h5>Information Technology</h5>
+          <p>Networking solutions, security systems, and home AV</p>
         </div>
       </div>
       <div class="carousel-item" id="slideFour">
         <div class="carousel-caption d-none d-md-block">
-          <h5>LA represent!</h5>
-          <p>I can see it now!</p>
+          <h5>Water Polo</h5>
+          <p>Greatest sport in the world!</p>
         </div>
       </div>
     </div>
@@ -66,6 +69,25 @@
     </a>
   </div>
 
+  <a id="aboutMe"></a>
+  <div>
+  <button class="accordion">Growing up</button>
+    <div class="panel">
+      <p>Born and raised in California, I spent my early years playing a variety of sports until I found my true love, water polo! In school, I loved art and history, but excelled at math and science. Some of my favorite vacation spots as a kid included Lake Havasu in Arizona, and Ft. Lauderdale in Florida.
+      </p>
+    </div>
+  <button class="accordion">Education</button>
+    <div class="panel">
+      <p>I started off as a computer science major at El Camino College. The plan was to become a video game programmer, but I didn't quite feel driven and excited by what I was doing. The next year I became an art major, and continued to gain credits until I transfered to Westwood College. There, I finished my bachelor's in game art and have since expanded into information technology via self-study.
+      </p>
+    </div>
+  <button class="accordion">Work Life</button>
+    <div class="panel">
+      <p>As a young adult, I entered the work force as a lifeguard at a city pool. I guarded, taught swim lessons, and even managed the pool for 7 years. After that, my first full-time job was in electromagnetic assembly. Towards the end of my assembly work, COVID-19 hit, and I bounced between jobs until I found work in a small IT company.</p>
+    </div>
+  </div>
+
+  <a id="contact"></a>
   <footer>
     <div class="footerIcon">
       <a link href="#">
@@ -90,8 +112,11 @@
       </form>
     </div>
   </footer>
+</div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
   </body>
 </html>
