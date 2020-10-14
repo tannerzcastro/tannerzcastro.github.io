@@ -1,3 +1,12 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 nav {
     background-color: #FF6600;
     width: 10%;
@@ -10,6 +19,7 @@ nav {
     text-align: center;
     font-size: 2vw;
     box-shadow: 8px 8px 8px rgb(44, 44, 44);
+    overflow-x: hidden;
 }
 
 #navText {
@@ -27,6 +37,48 @@ nav {
     float: right;
     margin-top: 3vh;
     margin-right: 3vh;
+    position: relative;
+}
+
+#landingPageCarousel {
+    height: 60vh;
+    width: 70vh;
+    margin: auto;
+    position: relative;
+}
+
+#landingPageCarousel .carousel-inner, 
+#landingPageCarousel .carousel-item {
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+#slideOne {
+    background-image: url("../img/CowSkull.jpg");
+}
+
+#slideTwo {
+    background-image: url("../img/spitfire.png");
+}
+
+#slideThree {
+    background-image: url("../img/state.jpg");
+}
+
+#slideFour {
+    background-image: url("../img/city.jpg");
 }
 
 #navText a {
@@ -55,17 +107,17 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
     box-shadow: 8px 8px 8px rgb(77, 77, 77);
-  }
+}
 
 footer {
     background-color: darkgray;
     z-index: -1;
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
-    height: 5vh;   
+    height: 100%;   
 }
 
 .footerIcon {
@@ -75,4 +127,10 @@ footer {
     margin-top: 3px;
     margin-bottom: 3px;
     display: flex;
+}
+
+.container {
+    padding-bottom: 10px;
+    margin-left: 10%;
+    width: 100%;
 }
